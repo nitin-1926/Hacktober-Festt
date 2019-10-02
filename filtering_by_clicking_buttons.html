@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Filtering by clicking Buttons</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+  <div ng-app="myapp" ng-controller="mycntrl">
+    <table border="1" width="100%" cellspacing="0">
+     <tr>
+      <th ng-click="orderByMe('Name')">Name</th>
+      <th ng-click="orderByMe('rollno')">Roll No.</th>
+      <th ng-click="orderByMe('Marks')">Marks</th>
+      <th ng-click="orderByMe('address')">Address</th>
+     </tr>
+
+     <tr ng-repeat="x in students | orderBy:myOrderBy">
+      <td>{{x.Name}}</td>
+      <td>{{x.rollno}}</td>
+      <td>{{x.Marks}}</td>
+      <td>{{x.address}}</td>
+     </tr>
+    </table>
+  </div>
+    <script>
+      var mod=angular.module("myapp",[]);
+      mod.controller("mycntrl",function($scope){
+            $scope.students=[
+              {Name:'Raj',rollno:214,Marks:20,address:'Chandigarh'},
+              {Name:'Arti',rollno:126,Marks:5,address:'Punchkula'},
+              {Name:'John',rollno:123,Marks:8,address:'Patiala'}
+            ];
+            $scope.orderByMe=function(x){
+              $scope.myOrderBy=x;
+            }
+      });
+    </script>
+
+
+</body>
+</html>
