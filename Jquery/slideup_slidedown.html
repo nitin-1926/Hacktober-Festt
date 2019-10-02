@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel='stylesheet' href='bootstrap/css/bootstrap.min.css'>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<title>Slide Up and Slide Down</title>
+	<script src="jquery-3.4.1.min.js"></script>
+	<script>
+        $(document).ready(function(){
+           $("#btn1").click(function(){
+           	$("#para").slideUp();
+           });
+           $("#btn2").click(function(){
+           	$("#para").slideDown();
+           });
+        });
+	</script>
+	</head>
+	<button id="btn1">Slide Up</button>
+	<button id="btn2">Slide Down</button>
+	<!-- <p class="para">This paragraph will be slided up and Down</p> -->
+	<img src="download.png" class="img-rounded" id="para">
+	<!-- <p class="para1">This paragraph will be slided down</p> -->
+</html>
