@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AngularJS Objects</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+	<div ng-app="" ng-init="person={firstName:'Rahasya',LastName:'Gupta'}">
+		FirstName: <p>{{person.firstName}}</p>
+		<br>
+        LastName: <p><span ng-bind="person.LastName"></span></p>
+	</div>
+</body>
+</html>
