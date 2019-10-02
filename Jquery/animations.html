@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animations</title>
+	<script src="jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("button").click(function(){
+				$(".ani").animate({left:'250px',
+			                          height:'100px',
+			     });
+			});
+		});
+	</script>
+	</head>
+	<body>
+		<button>Start Animation</button>
+		<div class="ani" style="height:70px;width:90px;background-color:green;position:absolute"></div>
+	</body>
+</html>

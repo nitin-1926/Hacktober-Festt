@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Click Function</title>
+	<script src="jquery-3.4.1.min.js"></script>
+<script>
+	$(document).ready(function(){
+		//$("button").dblclick(function(){
+			//$("button").click(function(){
+				// $("p").mouseenter(function(){
+					//$("p").mouseleave(function(){
+                     // $("p").mousedown(function(){
+                     	 //$("p").mouseup(function(){
+                     	 	 // $("p").hover(function(){
+                     	 	 	 // $("input").focus(function(){
+                     	 	 	 	$("input").blur(function(){
+			// $(":button").hide();
+			//$("#head").hide();
+			//$(".mid").hide();
+			// $("P").hide();
+			// $("tr:even").hide();
+			// $("tr:odd").hide();
+			// $("ul li:first").hide();
+			// $("ul li:last").hide();
+			// $("*").hide();
+			//$(this).hide();
+			$("p").css("background-color","red").fadeOut(2000);
+		});
+	});
+</script>
+</head>
+<body>
+	<input type="text">
+	<h1 id="head">Hello World</h1>
+	<button>
+		Click Me
+	</button> 
+	<h2 class="mid">Go GLobal</h2>
+	<p>Your picture is in my bag.</p>
+	<table>
+		<tr>
+			<td>Items</td>
+			<td>Price</td>
+		</tr>
+		<tr>
+			<td>Chocolates</td>
+			<td>Rs. 100</td>
+		</tr>
+		<tr>
+			<td>Cakes</td>
+			<td>Rs. 300</td>
+		</tr>
+	</table>
+	<ul>
+		<li>Tea</li>
+		<li>Coffee</li>
+		<li>Green Tea</li>
+	</ul>
+</body>
+</html>

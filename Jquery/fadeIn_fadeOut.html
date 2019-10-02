@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fade In and Fade Out</title>
+	<script src="jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".btn1").click(function(){
+				$("p").fadeIn();
+			});
+			$(".btn2").click(function(){
+				$("p").fadeOut();
+			});
+		});
+	</script>
+</head>
+<body>
+  <p>This is a Paragraph</p>
+  <button class="btn1">Fade In</button>
+  <button class="btn2">Fade Out</button>
+</body>
+</html>
