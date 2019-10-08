@@ -8,4 +8,7 @@ Start Hacking. Next Follow the Steps below to make Pull requests.
 4. Click on create New Pull Request
 5. Add proper comments and commit.
 
-Make 5 such commits to win the prizes.
+4 Pull requests are required to complete the challenge.
+But Make 5-6 such to secure the prizes.
+
+If this helped you then Star the repo!!
