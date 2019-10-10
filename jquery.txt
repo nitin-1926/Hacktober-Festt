@@ -1,0 +1,36 @@
+JQUERY ANIMATE()
+
+
+
+
+
+
+
+
+
+
+
+This method is use to stalk an animation or effect before it is finished it woprks for , styling , fading and custom animation.
+Syntax:
+$(selector).stop(stopAll,goToEnd);
+$(button) click(button) 
+
+JQUERY HTML:-
+:-it will return or set css property :
+	CSS("property name");
+	it will return css properrty of html element
+it will set the prpoperty of html element 
+
+
+
+JQUERY 
+GET CONTENT
+1 text():- this method gets the content of selected element 
+2 html():-this method gets the value of slected element but also including markups
+3 val():-it gets the value of form feeds of html element .
+
+GET
+APPEND method:-it inserts content at the end of selected element .
+PREPEND method:- it inserts content at the begening of selected element  .
+           After the selected element 
+JQUERY DIMENSIONS:
