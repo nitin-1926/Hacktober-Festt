@@ -1,5 +1,5 @@
 # Hacktober-Festt
-Make pull requests in this repo to win a Tshirt and cool laptop stickers from Github.
+Make pull requests in this repo to win a Tshirt and super cool laptop stickers from Github and Digital Ocean.
 First and Foremost register yourself on https://hacktoberfest.digitalocean.com and then click
 Start Hacking. Next Follow the Steps below to make Pull requests.
 1. Fork this repo into your account
