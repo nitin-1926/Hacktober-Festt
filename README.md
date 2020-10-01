@@ -12,4 +12,6 @@ Start Hacking. Next Follow the Steps below to make Pull requests.
 Minimum 4 Pull requests are required to complete the challenge.
 But Make 5-6 such to secure the prizes.
 
+Every PR is accepted as soon as I can. Just follow the community guidelines.
+
 If this helped you then Star the repo!!
