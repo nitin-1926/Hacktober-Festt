@@ -74,6 +74,8 @@ import React, { Component } from 'react';
 import { Card, CardImg, CardText, CardBody, CardTitle, Button, Breadcrumb, BreadcrumbItem, Modal, ModalHeader, ModalBody, Label, Row, Col } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { Control, LocalForm, Errors } from 'react-redux-form';
+    
+    // RenderDish will display the details of dishes
     function RenderDish({dish}) {
             return(
                 <div className="col-12 col-md-5 m-1">
