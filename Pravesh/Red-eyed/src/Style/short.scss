@@ -1,0 +1,105 @@
+.menshort{
+    color: #2D2D2D;
+    margin: 50px 100px;
+    & .head{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        & h3{
+            font-size: 25px;
+            margin: 0;
+        }
+        & span{
+            cursor: pointer;
+            font-size: 16px;
+        }
+        & .link{
+            text-decoration: none;
+            color: black;
+        }
+    }
+    & .body{
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        overflow-x: scroll;
+        & .collection{
+            margin-right: 1em;
+            display: flex;
+            flex-direction: column;
+            & .link{
+                text-decoration: none;
+            & .inStock{
+                height: 12em;
+                cursor: pointer;
+                width: 14em;
+                background-color: #F7F7F7;
+                &:hover{
+                    opacity: 0.6;
+                }
+            }
+            & .title{
+                color: #474747;
+                font-size: 1.1em;
+                font-weight: 500; 
+                text-transform: capitalize;
+            }
+            }
+            & span{
+                margin-top: 0.4em;
+            }
+        }
+    }
+}
+
+.soldOut{
+    opacity: 0.4;
+    height: 12em;
+    cursor: pointer;
+    width: 14em;
+    background-color: #F7F7F7;
+    &::after{
+        content: 'SOLD OUT';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
+}
+.soldOutText{
+    position: relative;
+    padding: 3px 10px;
+    border: 2px solid black;
+    background-color: black;
+    color: #F7F7F7;
+    float: right;
+}
+
+
+    ::-webkit-scrollbar {
+        width: 10px;
+        height: 5px;
+      }
+       
+     ::-webkit-scrollbar-track {
+        background-color: transparent;
+      }
+       
+     ::-webkit-scrollbar-thumb {
+        background-color: darkgrey;
+        outline: 1px solid slategrey;
+      }
+
+
+
+@media screen and (max-width: 800px){
+    body{
+        overflow-x: hidden;
+    }
+    .menshort{
+        margin-top: 2%;
+    }
+}

@@ -1,0 +1,45 @@
+.detailed{
+    margin: 2em 5em;
+    text-align: center;
+    & img{
+        background-color: #F7F7F7;
+        height: 60%;
+        width: 60%;
+        display: flex;
+        justify-self: center;
+        left: 50%;
+        transform: translate(-50%);
+        position: relative;
+    }
+    & h1{
+        font-weight: 400;
+        letter-spacing: 2px;
+    }
+    & button{
+        background-color: #FF4F33;
+        padding: 20px 70px;
+        text-transform: uppercase;
+        font-weight: bolder;
+        color: white;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        &:disabled{
+            opacity: 0.4;
+        }
+    }
+    & span{
+        font-weight: 500;
+        font-size: 1.2em;
+        color: rgb(36, 35, 35);
+    }
+}
+
+@media screen and (max-width: 950px){
+    .detailed{
+        & img{
+        
+            width: 100%;
+        }
+    }
+}

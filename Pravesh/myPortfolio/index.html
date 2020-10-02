@@ -1,0 +1,213 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+
+<style>
+*{
+    font-family:'Josefin Sans', sans-serif;
+    scroll-behavior: smooth;
+    overflow-x:hidden;
+}
+nav-link:hover{
+  color: floralwhite !important;
+}
+
+section{
+  min-height: 100vh;
+  display: block;
+}
+
+section{
+  padding-top: 150px;
+}
+
+.button {
+  border-radius: 2px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 12px;
+  padding: 10px;
+  width: 120px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 4px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#">portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#about-sec">About <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#project-sec">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact-sec">Contact me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#more-sec">More</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<section id="about-sec"class="sec1">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-6" data-aos="fade-up"
+            data-aos-anchor-placement="top-center" data-aos-duration="1500">
+                <img src="./img/mainboot.png" class="img-fluid">
+            </div>
+            <div class="col-12 col-md-6" >
+              <h2 class="text-center">Welcome to my portfolio website!</h2><br>
+              <p>Hey folks, I'm Pravesh Goyal</p>
+              <p>I'm pursuing my B.E from Chitkara University in Computer Science. I am a Software Developer. I like coding as much as I like web development but I can say that I get intrigued from any technology that I start learning.</p>
+              <div class="btn-group">
+                <a href="Pravesh.pdf" class="btn btn-info button" roll="button">Download resume</a>  
+                <a href="#contact-sec" class="btn btn-info ml-2 button" role="button">Contact me</a>
+              </div>
+            </div>
+            </div>
+          </div>
+        <hr class="w-25 mx-auto">
+</section>
+<section id="project-sec"class="sec2">
+  <div class="container">
+  <h2 class="text-center">Things i have designed during my graduation :</h2>
+  <div class="card-columns"  data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+    <div class="card bg-danger">
+      <div class="card-body text-center">
+        <img src="./img/port.svg" alt="logo" style="width:120px; height:120px" class="img-fluid">
+        <p class="card-text">portfolio<br><br>A simple Portfolio Website to show my work made in HTML CSS bootstrap</p><br>
+        <div class="container">
+          <a href="https://github.com/GoyalPravesh/myPortfolio" class="btn btn-info" role="button" target="_blank">GET CODE</a>
+          </div>
+      </div>
+    </div>
+    <div class="card bg-danger">
+      <div class="card-body text-center">
+        <img src="./img/carport.svg" alt="logo" style="width:120px; height:120px" class="img-fluid">
+        <p class="card-text">Brick Breaker Game<br><br> An attractive java based game that you would like to play.<br></p><br>
+        <div class="container">
+          <a href="Brick.jar" target="_blank" class="btn btn-info" role="button">DOWNLOAD GAME</a>
+          </div>
+      </div>
+    </div>
+    <div class="card bg-danger">
+      <div class="card-body text-center">
+        <img src="./img/codeport.svg" alt="logo" style="width:120px; height:120px" class="img-fluid">
+        <p class="card-text">Online Exam<br><br>Its a online exam in java in which you need to test your java knowledge.</p><br>
+        <div class="container">
+          <a href="Exam.java" class="btn btn-info " target="_blank" role="button">GET CODE</a>
+          </div>
+      </div>
+    </div> 
+  </div>
+  <hr class="w-25 mx-auto ">
+  </div>
+</section>
+<section id="contact-sec">
+  <div class="container-fluid">
+    <div class="row d-flex justify-content-center align-items-center pb-5">
+        <div class="col-12 col-md-6" data-aos="zoom-in" data-aos-duration="2000">
+          <img src="./img/contact.svg" class="img-fluid w-75">
+        </div>
+     <div class="col-12 col-md-6" data-aos="fade-down-left" data-aos-duration="2500">
+        <h2>Interested to work together?<br>Let's talk</h2><br><br>
+        <form action="#">
+          <div class="form-group">
+            <label for="Name">Name:</label>
+            <input type="Name" class="form-control" id="Name" placeholder="Enter your name" name="Name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email">
+          </div>
+          <div class="form-group">
+            <label for="Contact">Contact:</label>
+            <input type="password" class="form-control" id="Contact" placeholder="Enter  your contact number" name="Contact">
+          </div>
+          <button type="submit" class="btn btn-info button" role="button">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>      
+</section>
+<section class="sec1" id="more-sec">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-12 col-md-6">
+              <img src="./img/phoneboot.svg" class="img-fluid">
+          </div>
+          <div class="col-12 col-md-6"  data-aos="fade-down-left" data-aos-duration="2000">
+            <h2 class="text-center">Say hello!</h2>
+            <p>+917009566315</p>
+            <p>pravesh171590.cse@chitkara.edu.in</p>
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <a href="https://github.com/Prateekmiglani17" target="_blank"><img src="./img/github_PNG40.png" class="img-fluid" style="width:35px;height:35px;">
+                  <a href="https://linkedin.com/in/prateek-miglani-98a619155" target="_blank"><img src="./img/linked.png" class="img-fluid" style="width:27px;height:27px;"></a></a>
+                  <br>
+                  <br>
+                  </div>
+            <div class="col-12 col-md-6">
+            <p style="color:red;">* Don’t treat a semi colon as an end of line but rather as a possibility of a new beginning inspirational right? *</p>
+            <i class="fab fa-github"></i>
+            </div>
+          </div>
+          </div>
+          </div>
+          </div>
+        </div>
+      <hr class="w-25 mx-auto">
+</section>
+<div class="footer-copyright text-center py-1 pt-2 text-white bg-dark">© 2020 Copyright Pravesh Goyal . All rights reserved <br>designed by Pravesh</div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
