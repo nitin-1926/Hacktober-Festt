@@ -1,0 +1,120 @@
+.Influencers{
+    color: #2D2D2D;
+    & .show{
+        display: flex;
+        margin: 5% 10% 5% 10%;
+        flex-direction: row;
+    }
+    & .show:nth-child(odd){
+        flex-direction: row-reverse;
+    }
+    & .show:nth-child(even){
+        & span{
+            margin-left: 9%;
+        button{
+            width: 34%;
+            &::before{
+                content: '';
+                position: absolute;
+                background-color: black;
+                left: 908px;
+                transform: translate(0, -31.3%);
+                height: 48px;
+                width: 0em; 
+                transition: .2s ease;
+            }
+            &:hover::before{
+                width: 2.5%;
+            }
+        }
+        }
+    }
+    
+    & span{
+        text-transform: uppercase;
+        & h4{
+            font-weight: 400;
+            font-size: 1em;
+            letter-spacing: 2px;
+        }
+        & h2{
+            font-weight: 500;
+            font-size: 1.7em;
+            letter-spacing: 2px;
+
+        }
+        & p{
+            text-transform: initial;
+            padding-right: 5em;
+            font-weight: normal;
+            letter-spacing: 2px;
+            font-size: 1.2em;
+            word-spacing: 3px;
+            font-weight: 480;
+        }
+        & button{
+            outline: none;
+            background-color: black;
+            border: none;
+            color: white;
+            font-size: 1em;
+            font-weight: 500;
+            letter-spacing: 2px;
+            padding: 15px 30px;
+            width: 29%;
+            &::after{
+                content: '';
+                position: absolute;
+                background-image: url('../assets/arrow.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                height: 5%;
+                width: 4.2%;
+                transform: translate(62%,-20%);
+                transition: 0.2s ease;
+            }
+            &:hover::after{
+                transform: translate(30%,-20%);
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                background-color: black;
+                left: 270px;
+                transform: translate(0, -31.3%);
+                height: 48px;
+                width: 0em; 
+                transition: .2s ease;
+            }
+            &:hover::before{
+                width: 4%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 950px){
+    .Influencers{
+        & .show{
+            margin-top: 30%;
+            flex-direction: column;
+            & img{
+                width: 100%;
+            }
+        }
+        & .show:nth-child(odd){
+            flex-direction: column;
+        }
+        & span{
+            & button{
+                width: 35%;
+                &::after{
+                    transform: translate(200%,-20%);
+                }
+                &::before{
+                    display: none;
+                }
+            }
+        }
+    }
+}

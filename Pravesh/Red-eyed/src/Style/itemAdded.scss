@@ -1,0 +1,12 @@
+.ItemAdded{
+    position: fixed;
+    top: -50%;
+    padding: 30px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #faeee7;
+    transition: 0.5s ease;
+    & button{
+        background-color: black;
+    }
+}

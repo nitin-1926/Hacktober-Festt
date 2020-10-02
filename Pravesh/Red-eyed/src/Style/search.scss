@@ -1,0 +1,76 @@
+.search{
+    & .product{
+        font-size: 2em;
+        width: 50%;
+        padding: 1em 1em 0.4em 1em;
+        position: absolute;
+        transform: translateY(-100%);
+        z-index: 8;
+        left: 1em;
+        transition: 0.2s ease;
+    }
+    & .button{
+        width: 10em;
+        padding: 1em 1em 0.69em 1em;
+        font-size: 2em;
+        left: 57.5%;
+        position: absolute;
+        z-index: 8;
+        background-color: black;
+        color: white;
+        outline: none;
+        border: none;
+        transform: translateY(-100%);
+        transition: 0.2s ease;
+    }
+}
+.slide{
+    & .product{
+        font-size: 2em;
+        width: 50%;
+        padding: 1em 1em 0.4em 1em;
+        position: absolute;
+        transform: translateY(0%);
+        left: 1em;
+        z-index: 8;
+        transition: 0.2s ease;
+    }
+    & .button{
+        width: 10em;
+        padding: 1em 1em 0.69em 1em;
+        font-size: 2em;
+        left: 57.5%;
+        position: absolute;
+        z-index: 8;
+        background-color: black;
+        color: white;
+        outline: none;
+        border: none;
+        transform: translateY(0%);
+        transition: 0.2s ease;
+    }
+}
+
+.noRes{
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: 400;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%);
+}
+
+@media screen and (max-width: 950px){
+    .slide{
+        & .product{
+            font-size: 1.5em;
+            transform: translate(30%,100%);
+        }
+        & .button{
+            padding: 0.5em 0.5em 0.2em 0.5em;
+            font-size: 1.5em;
+            transform: translate(-57%,310%);
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.form{
+    & h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(200%);
+        text-transform: uppercase;
+        text-decoration: underline;
+        
+    }
+    & form{
+        display: flex;
+        padding: 30px 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10%;
+        & input{
+            margin-top: 1%;
+        }
+        & .textField{
+                width: 30%;
+                height: 30%;
+                padding: 10px 5px;
+                font-weight: bold;
+                border: 1.3px solid black;
+        }
+        & .btn{
+            background-color: black;
+            border: none;
+            color: white;
+            padding: 10px 50px;
+        }
+    }
+    & .link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+    }
+}
