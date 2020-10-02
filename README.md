@@ -41,6 +41,7 @@ Now go to your local repo which you have forked and check if the changes you mad
 Once you see `Able to merge` on your screen, create the pull request and add proper comments (preferably your name and PR number) and click on create pull request 
 
 This completes 1 pull request.
+Now go to your hacktober fest profile and check if the counter for pull requests have increased. If it increased then you have successfully completed 1 PR.
 Repeat the above steps and further add the changes in the folder you created already. Don't need to create a separate folder everytime.
 
 Minimum 4 Pull requests are required to complete the challenge.
