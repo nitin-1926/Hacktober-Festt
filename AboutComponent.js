@@ -19,7 +19,7 @@ function RenderLeader({leader}){
         </div>
     );
 }
-
+// aniket pr 3
 function About(props) {
 
     const leaders = props.leaders.map((leader) => {
