@@ -1,4 +1,3 @@
-# backend file for the tkinter project
 import sqlite3
 
 

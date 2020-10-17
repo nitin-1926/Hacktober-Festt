@@ -1,5 +1,3 @@
-# frontend file for the tkinter project
-
 from  tkinter import *
 import backend
 
