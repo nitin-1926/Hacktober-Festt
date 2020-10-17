@@ -1,0 +1,19 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#thumbnail{
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+}
+#thumbnail img{
+    width: 100%;
+}
+.tagline{
+    margin-top: -20px;
+    margin-right: -200px;
+    font-size: .8rem;
+}
