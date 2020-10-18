@@ -1,3 +1,4 @@
+# Frontend file of the project
 from  tkinter import *
 import backend
 
