@@ -1,3 +1,4 @@
+# Backend file of the project
 import sqlite3
 
 
