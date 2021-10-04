@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> <link rel="stylesheet"href="rps.css">
+</head>
+<body>
+    <div id = "challenge-3">
+        <div class = "text-3">
+            <h1>Challenge 3: Rock, Paper, Scissors</h1>
+        </div>
+        <div id = "rpcPics">
+            <img src = "rock.jpg" id = "rock">
+            <img src = "http://static7.depositphotos.com/1077687/705/v/950/depositphotos_7050373-Stop-hand.jpg" id = "paper">
+            <img src = "scissors.png" id = "scissors">
+        </div>
+        <button id="reset" onclick="reset()">Reset</button>
+        <table>
+           <tr>
+            <th>Wins</th>
+            <th>Losses</th>
+            <th>Draws</th>
+           </tr>
+           <tr>
+               <td><span id="winsRPS">0</span></td>
+               <td><span id="lossesRPS">0</span></td>
+               <td><span id="drawsRPS">0</span></td>
+           </tr>
+        </table>
+    </div>
+    <script src= rps.js></script>
+
+</body>
+</html>
