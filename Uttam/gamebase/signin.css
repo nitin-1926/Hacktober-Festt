@@ -1,0 +1,61 @@
+body{
+    background-color: lightgray;
+}
+#brand{
+    padding-left: 45%;
+}
+
+.loginform{
+    margin-top: 10px;
+    border: black solid 2px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 30%;
+    margin-left: 35%;
+ padding-bottom: 10px;
+ margin-top: 150px;
+ background-color: rgba(176, 231, 250, 0.822);
+}
+.button{
+   margin-top: 8px;
+   margin-left: 155px;
+   padding-left: 20px;
+   padding-right: 20px;
+   background-color: rgb(168, 250, 135);
+
+}
+input[type='email']{
+    width: 90%;
+    padding-left: 10px;
+    margin-left: 20px;
+}
+input[type='password']{
+    width: 90%;
+    padding-left: 10px;
+    margin-left: 20px;
+}
+input[type='text']{
+    width: 90%;
+    padding-left: 10px;
+    margin-left: 20px;
+}
+.label{
+    padding-left: 150px;
+}
+#signup{
+    color:darkblue;
+    padding-left: 80px;
+}
+#signup:hover{
+ color:red;
+}
+#error{
+    text-align: center;
+    color: red;
+    font-size: 20px;
+}
+#message{
+    text-align: center;
+    color: green;
+    font-family:Arial, Helvetica, sans-serif
+}

@@ -1,0 +1,82 @@
+body{
+    background-color:lightgray;
+}
+#search{
+ margin-left: 870px;
+ 
+}
+
+#searchbar{
+    position: absolute;
+    left: 400px;
+    margin-top: 5px;
+    border-radius: 30px;
+    outline: none;
+    padding-left: 20px;
+    width:60%;
+
+}
+
+.carousel-item{
+    background-size: cover;
+    color: white;
+    height: 32rem;
+}
+
+.playbutton{
+    position: relative;
+    left: 45%;
+    top: 83%;
+    outline: black;
+    outline-width: 5px;
+}
+#bestgametitle{
+    text-align: center;
+   
+    color: yellow;
+}
+#welcome-message{
+    margin-top: 58px;
+    font-size: 45px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.category{
+    height: 400px;
+    
+}
+.best{
+    background-color: red;
+    height : 200px;
+}
+.category-element{
+    text-align: center;
+    border:1px black solid;
+    background-color: lightsteelblue;
+    font-size: 30px;
+    text-decoration: none;
+    border-top: 0px;
+}
+.category-link{
+    text-decoration: none;
+    color: black;
+}
+.category-link:hover{
+    color: red;
+}
+.game{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.game-text{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+.game-text:hover{
+    color:black;
+}
+#upload-game{
+    display:none;
+}

@@ -1,0 +1,151 @@
+body{
+    background-color:#d3d3d3;
+}
+
+#signout{
+margin-left: 900px;
+
+}
+#signoutdiv{
+    margin-left: 800px;
+}
+
+
+.carousel-item{
+    background-size: cover;
+    color: white;
+    height: 32rem;
+}
+
+.playbutton{
+    position: relative;
+    left: 45%;
+    top: 83%;
+    outline: black;
+    outline-width: 5px;
+}
+#bestgametitle{
+    text-align: center;
+    position: relative;
+    bottom:5px;
+    color: yellow;
+}
+#upload{
+    display:none;
+}
+.category{
+    height: 400px;
+    
+}
+.best{
+    background-color: red;
+    height : 200px;
+}
+.category-element{
+    text-align: center;
+    border:1px black solid;
+    background-color: lightsteelblue;
+    font-size: 30px;
+    text-decoration: none;
+    border-top: 0px;
+}
+.category-link{
+    text-decoration: none;
+    color: black;
+}
+.category-link:hover{
+    color: red;
+}
+.game{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.game-text{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+.game-text:hover{
+    color:black;
+}
+#upload-game{
+    display:none;
+}
+#searchbar{
+    width: 80%;
+    outline: none;
+    padding-left: 20px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: grey;
+}
+#welcome{
+    font-size: 60px;
+    font-weight: 100;
+    color: black;
+    text-shadow: 4px 4px 20px red;
+    margin-top: 50px;
+}
+#iframe{
+    width: 100%;
+    height: 470px;
+}
+
+.gamecategory{
+    display: none;
+}
+#upload-heading{
+    font-weight: 700;
+    text-align: center;
+    margin-top: 35px;
+    color: black;
+}
+.input{
+    width: 70%;
+    margin-left: 20px;
+    height: 30px;
+    font-size: 20px;
+}
+.label{
+    font-size: 28px;
+    margin-left: 100px;
+}
+#category-select{
+    width: 62%;
+    height: 30px;
+    margin-left: 20px;
+    text-align: center;
+}
+.url{
+    width: 66%;
+    margin-left : 17px;
+    height: 30px;
+    font-size: 20px;
+}
+.urls{
+    width: 64%;
+    margin-left : 20px;
+    height: 30px;
+    font-size: 20px;
+}
+.btn-block{
+    width:70%;
+    margin-left: 200px;
+    margin-top: 20px;
+
+}
+.gameheading{
+    color:black; text-align: center; background-color: white;
+    margin-top: 58px;
+}
+.gametitle{
+    color:white;
+    text-align: center;
+    background-color: black;
+    margin-top: 58px;
+}
+#uploadnumber{
+    text-align: center;
+    font-size: 45px;
+    margin-top: 20px;
+}

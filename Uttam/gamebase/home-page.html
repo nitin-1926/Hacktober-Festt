@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="home-page.css">
+  <title>GamersArena</title>
+  <link rel='icon' type='image/png' href='video-game.png'>
+
+</head>
+
+<body>
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+
+    <a class="navbar-brand" href="main-page.html">
+      <img src="video-game.png" alt="" class="d-inline-block align-top">
+      GamersArena
+    </a>
+
+    <ul class='navbar-nav'>
+      <li class='nav-item'>
+        <a class='nav-link active' href='home-page.html' id="home">Home</a>
+      </li>
+      <li class='nav-item'>
+        <a class='nav-link'  href="login-page.html">Sign In</a>
+      </li>
+      <li class='nav-item'>
+        <a class='nav-link'  href='sign-up.html' >Sign Up</a>
+      </li>
+      
+      
+      
+
+    </ul>
+
+  </nav>
+  </div>
+  <h2 id="welcome-message">Welcome User! Sign In/Sign Up to start playing Games</h2>
+  <h1 id="bestgametitle" class='bg-success'>Some Of the best Games</h1>
+  <div class='container'>
+    <div id='bestgames' class='carousel slide carousel-fade' data-bs-ride='carousel'>
+      <ol class="carousel-indicators">
+        <li data-bs-target="#bestgames" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#bestgames" data-bs-slide-to="1"></li>
+        <li data-bs-target="#bestgames" data-bs-slide-to="2"></li>
+        <li data-bs-target="#bestgames" data-bs-slide-to="3"></li>
+        <li data-bs-target="#bestgames" data-bs-slide-to='4'></li>
+        <li data-bs-target="#bestgames" data-bs-slide-to="5"></li>
+        <li data-bs-target="#bestgames" data-bs-slide-to="6"></li>
+        <li data-bs-target="#bestgames" data-bs-slide-to="7"></li>
+        <li data-bs-target="#bestgames" data-bs-slide-to="8"></li>
+
+      </ol>
+      <div class='carousel-inner'>
+        <div class='carousel-item active'
+          style='background-image: url(./gamelogo/best/8BallBilliardsClassicTeaser.jpg);'>
+          <button type="button" class="btn btn-success btn-lg playbutton" onclick="redirect()">PLAY NOW</button>
+        </div>
+        <div class='carousel-item' style="background-image: url(./gamelogo/best/BubbleWoodsTeaser.jpg);">
+          <button type="button" class="btn btn-success btn-lg playbutton" onclick="redirect()">PLAY NOW</button>
+        </div>
+        <div class='carousel-item' style='background-image: url(./gamelogo/best/ColorPixelArtClassicTeaser.jpg);'>
+          <button type="button" class="btn btn-success btn-lg playbutton" onclick="redirect()">PLAY NOW</button>
+        </div>
+        <div class='carousel-item' style="background-image: url(./gamelogo/best/ElementBlocksTeaser.jpg);">
+          <button type="button" class="btn btn-success btn-lg playbutton" onclick="redirect()">PLAY NOW</button>
+        </div>
+        <div class='carousel-item' style="background-image: url(./gamelogo/best/GinRummyPlusTeaser.jpg);">
+          <button type="button" class="btn btn-success btn-lg playbutton" onclick="redirect()">PLAY NOW</button>
+        </div>
+        <div class='carousel-item' style="background-image: url(./gamelogo/best/MotoX3mPoolPartyTeaser.jpg);">
+          <button type="button" class="btn btn-success btn-lg playbutton" onclick="redirect()">PLAY NOW</button>
+        </div>
+        <div class='carousel-item' style="background-image: url(./gamelogo/best/PerfectPiano_Teaser.jpg);">
+          <button type="button" class="btn btn-success btn-lg playbutton" onclick="redirect()">PLAY NOW</button>
+        </div>
+        <div class='carousel-item' style="background-image: url(./gamelogo/best/PirateCardsTeaser.jpg);">
+          <button type="button" class="btn btn-success btn-lg playbutton" onclick="redirect()">PLAY NOW</button>
+        </div>
+        <div class='carousel-item' style="background-image: url(./gamelogo/best/ZooBoomTeaser.jpg);">
+          <button type="button" class="btn btn-success btn-lg playbutton" onclick="redirect()">PLAY NOW</button>
+        </div>
+
+
+
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#bestgames" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#bestgames" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+    </div>
+  </div>
+  <br>
+  <div class='container-fluid'>
+    <div class='row'>
+      <div class='col-sm-2 category'>
+        <div class='row category-element' style="background-color: cadetblue; border-bottom: 0px;">
+          <h3 style="color: white;">CATEGORIES</h3>
+        </div>
+        <div class='row category-element'> <a class='category-link' href='login-page.html'>Arcade</a></div>
+        <div class='row category-element'><a class='category-link' href='login-page.html'>Bubble Shooter</a></div>
+        <div class='row category-element'><a class='category-link' href='login-page.html'>Best</a></div>
+        <div class='row category-element'><a class='category-link' href='login-page.html'>Cards</a></div>
+        <div class='row category-element'><a class='category-link' href='login-page.html'>Jump And Run</a></div>
+        <div class='row category-element'><a class='category-link' href="login-page.html">Puzzle</a></div>
+        <div class='row category-element'><a class='category-link' href='login-page.html'>Quiz</a></div>
+        <div class='row category-element'><a class='category-link' href='login-page.html'>Racing</a></div>
+        <div class='row category-element' style="border-bottom: 0px;"><a class='category-link' href='login-page.html'>Sports</a>
+        </div>
+      </div>
+      <div class='col-sm-10 new'>
+        <h1 class='bg-info'>New Games</h1>
+
+        <div class='row game'>
+          <div class='col-sm-4 game'>
+           <a onclick="redirect()" class='game-text'> <img src="gamelogo/new/BrainTrainerTeaser.jpg" alt="">
+            <h3 >Brain Trainer</h3>
+           </a>
+          
+          </div>
+          <div class='col-sm-4 game'>
+           <a onclick="redirect()" class='game-text'> <img src="gamelogo/new/BusParking3dTeaser.jpg" alt="">
+            <h3 >Bus Parking 3d</h3>
+            </a>
+          </div>
+          <div class='col-sm-4 game'>
+           <a onclick="redirect()" class='game-text'> <img src="gamelogo/new/CrazyCavesTeaser.jpg" alt="">
+            <h3 >Crazy Caves</h3>
+            </a>
+          </div>
+        </div>
+        <div class='row game'>
+          <div class='col-sm-4 game'>
+           <a onclick="redirect()" class='game-text'> <img src="gamelogo/new/FuzziesTeaser.jpg" alt=''>
+            <h3 >Fuzzies</h3>
+            </a>        
+          </div>
+          <div class='col-sm-4 game'>
+           <a onclick="redirect()" class='game-text'> <img src="gamelogo/new/GardenBloomTeaser.jpg" alt="">
+            <h3>Garden Bloom</h3>
+            </a>
+          </div>
+          <div class='col-sm-4 game'>
+           <a onclick="redirect()" class='game-text'> <img src="gamelogo/new/GardenMatch3dTeaser.jpg" alt="">
+            <h3 >Garden Match 3d</h3>
+            </a>
+          </div>
+        </div>
+        <div class='row game'>
+          <div class='col-sm-4 game'>
+           <a onclick="redirect()" class='game-text'> <img src="gamelogo/new/MahjongWorldTeaser.jpg" alt="">
+            <h3 >Mahjong World</h3>
+            </a>
+          
+          </div>
+          <div class='col-sm-4 game'>
+           <a onclick="redirect()" class='game-text'> <img src="gamelogo/new/PullPinsTeaser.jpg" alt="">
+            <h3 >Pull Pins</h3>
+           </a>
+          </div>
+          <div class='col-sm-4 game'>
+           <a onclick="redirect()" class='game-text' > <img src="gamelogo/new/TntBombTeaser.jpg" alt=''>
+          <h3 >Tnt Bomb</h3> </a>       </div>
+        </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyDJzne7p_Vbcnm8H2liWkjq1A7LcFXhLeo",
+      authDomain: "gamersarenawoc.firebaseapp.com",
+      projectId: "gamersarenawoc",
+      storageBucket: "gamersarenawoc.appspot.com",
+      messagingSenderId: "839180830761",
+      appId: "1:839180830761:web:14fbddc23dc8824a7ab438"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+    const database = firebase.firestore();
+    database.settings({ timestampsInSnapshots: true });
+  </script>
+  
+  <script>
+  
+  function redirect(){
+    window.location.href="login-page.html";
+  }
+   // var play = document.querySelector('.btn-lg');
+  ////  play.forEach().addEventListener('click', ()=>{
+    //  window.location.href="login-page.html";
+   // });
+  </script>
+</body>
+
+</html>

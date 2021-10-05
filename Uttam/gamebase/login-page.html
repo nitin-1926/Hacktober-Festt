@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="signin.css">
+  <title>LOGIN PAGE</title>
+  <link rel="icon" type='image/png' href='video-game.png'>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <div class="container-fluid" id='brand'>
+        <a class="navbar-brand" href="home-page.html">
+          <img src="video-game.png" alt="" class="d-inline-block align-top">
+          GamersArena
+        </a>
+      </div>
+    </div>
+    </div>
+  </nav>
+  <form class='loginform'>
+    <p id="error"></p>
+    <label class='label'>Email Address</label>
+    <br>
+    <input type="email" placeholder="Email" id='email'>
+    <br>
+    <label class='label' style='padding-left: 160px;'>Password</label>
+    <br>
+    <input type="password" placeholder="Password" id="password"><br>
+    <button type="button" class="btn btn-outline-success button" id="signinbutton">Sign In</button>
+    <br>
+    <a href='sign-up.html' id='signup'>Don't have an Account? Create now!</a>
+  </form>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyDJzne7p_Vbcnm8H2liWkjq1A7LcFXhLeo",
+      authDomain: "gamersarenawoc.firebaseapp.com",
+      projectId: "gamersarenawoc",
+      storageBucket: "gamersarenawoc.appspot.com",
+      messagingSenderId: "839180830761",
+      appId: "1:839180830761:web:14fbddc23dc8824a7ab438"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const auth=firebase.auth();
+  </script>
+  <script src="loginjs.js"></script>
+</body>
+
+</html>
