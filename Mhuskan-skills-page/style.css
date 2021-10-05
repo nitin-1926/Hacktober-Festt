@@ -1,0 +1,153 @@
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	/* margin: 0; */
+	font-family: 'Poppins', sans-serif;
+}
+
+*{
+	box-sizing: border-box;
+	/* margin: 0;  */
+    /* background-color: #000000; */
+	-webkit-box-sizing: border-box;
+
+}
+
+}
+
+
+  /*Skills*/
+
+.skills{
+	padding: 100px 15px;
+	background-color: #ffffff;
+}
+
+.skills .skills-content{
+	flex: 0 0 50%;
+	max-width: 50%;
+	padding-right: 40px;
+}
+
+.skills .img{
+	flex: 0 0 50%;
+	max-width: 50%;
+}
+
+.align-items-center{
+	align-items: center;
+}
+
+.skills .img img{
+	width: 100%;
+	display: block;
+}
+
+.skills .skills-content .section-title p{
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 24px;
+	color: #838383;
+	margin: 15px 0 0;
+}
+
+.skills .skills-content .skill-box{
+	flex: 0 0 100%;
+	max-width: 100%;
+	margin-bottom: 30px;
+}
+
+.skills .skills-content .skill-box h6{
+	font-size: 16px;
+	font-weight: 500;
+	color: #000000;
+	margin:0 0 8px; 
+}
+
+.skills .skills-content .skill-box .skill-bar{
+	height:5px;
+	background-color: #eeeeee;
+	position: relative;
+}
+
+.skills .skills-content .skill-box .skill-bar .skill-bar-in{
+	background-color: #405d9b;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+
+}
+.skills .skills-content .skill-box .skill-bar .skill-bar-in span{
+	color: #838383;
+	font-size: 16px;
+	font-weight: 400;
+	position: absolute;
+	right: 0;
+	top: -30px;
+}
+
+.social {
+	margin: 0 auto;
+	width: auto;
+	text-align: inherit;
+	/* padding: 10px; */
+  }
+  
+  .icon-btn {
+	margin-left: auto;
+	width: 50px;
+	height: 50px;
+	border: 0;
+	color: #FFFFFF;
+	cursor: pointer;
+	font-size: 37px;
+	line-height: 38px;
+	border-radius: 45px;
+	display: inline-block;
+	margin: 10px;
+  }
+  
+  .github {
+	color: black;
+  }
+  
+  .linkedin {
+	color: #0077b5;
+  }
+  .icon-btn:hover {
+	transform: scale(1.10);
+	color: #FFFFFF;
+  }
+  
+  .linkedin:hover {
+	background-color: #0077b5;
+  }
+  
+  
+  
+  .github:hover {
+	background-color: black;
+  }  
+
+  footer{
+	padding: 70px 15px;
+	background-color: #0c0c17;
+}
+
+
+}
+
+.container{
+	max-width: 1140px;
+	margin: auto;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
