@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="main-page.css">
+  <title>Search Result</title>
+  <link rel='icon' type='image/png' href='video-game.png'>
+  <style>
+      .col-sm-4{
+          display: none;
+      }
+      #error{
+        display: none;
+      }
+  </style>
+
+</head>
+
+<body>
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+
+    <a class="navbar-brand" href="main-page.html">
+      <img src="video-game.png" alt="" class="d-inline-block align-top">
+      GamersArena
+    </a>
+
+    <ul class='navbar-nav'>
+      <li class='nav-item'>
+        <a class='nav-link' href='main-page.html' id="home">Home</a>
+      </li>
+      
+      <div id="navbarNavDarkDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Category
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+              <li><a class="dropdown-item" href="arcade.html">Arcade</a></li>
+              <li><a class="dropdown-item" href="cards.html">Cards</a></li>
+              <li><a class="dropdown-item" href="bubble-shooter.html">Bubble Shooter</a></li>
+              <li><a class="dropdown-item" href="jump-and-run.html">Jump and Run</a></li>
+              <li><a class="dropdown-item" href="main-page.html">New</a></li>
+              <li><a class="dropdown-item" href="puzzle.html">Puzzle</a></li>
+              <li><a class="dropdown-item" href="quiz.html">Quiz</a></li>
+              <li><a class="dropdown-item" href="racing.html">Racing</a></li>
+              <li><a class="dropdown-item" href="sports.html">Sports</a></li>
+              <li><a class="dropdown-item" href="best.html">Best</a></li>
+
+              
+
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <li class='nav-item'>
+        <a class='nav-link active' href="search.html" id='search'>Search Games</a>
+      </li>
+
+      <li class='nav-item'>
+        <a class='nav-link' href="#" id='upload-game'>Upload</a>
+      </li>
+      
+      <div id="signoutdiv">
+        <a class='nav-link' href="" id='signoutbutton'>Sign Out</a>
+      </div>
+
+    </ul>
+
+  </nav>
+  </div>
+  <br>
+  <div class='container' style="margin-top: 58px;">
+    <input id='searchbar' type='search' placeholder="Search Games" onkeyup="searchfun()" > 
+    <select name='filter' id='filter' onchange="selection()">
+      <optgroup label='SELECT CATEGORY'></optgroup>
+      <option value="all">All</option>
+      <option value="arcade">Arcade</option>
+      <option value="best">Best</option>
+      <option value="bubble shooter">Bubble Shooter</option>
+      <option value="cards">Cards</option>
+      <option value="jump and run">Jump And Run</option>
+      <option value="New">New</option>
+      <option value="puzzle">Puzzle</option>
+      <option value="quiz">Quiz</option>
+      <option value="racing">Racing</option>
+      <option value="sports">Sports</option>
+    </select>
+    <br>
+    <h1 style="text-align: center;" id='error'>No Results Found!</h1>
+    <div class='row game'>
+      <div class='col-sm-4'>
+       <a href="individual-website/arcade/bubbletower3d.html" class='game-text'> <img src="gamelogo/arcade/BubbleTower3dTeaser.jpg" alt="">
+        <h3 >Bubble Tower 3d</h3><span class='gamecategory'>arcade</span>
+       </a>
+      
+      </div>
+      <div class='col-sm-4'>
+       <a href="individual-website/arcade/busparking3d.html" class='game-text'> <img src="gamelogo/arcade/BusParking3dTeaser.jpg" alt="">
+        <h3 >Bus Parking 3d</h3><span class='gamecategory'>arcade</span>
+        </a>
+      </div>
+      <div class='col-sm-4'>
+       <a href="individual-website/arcade/crazycaves.html" class='game-text'> <img src="gamelogo/arcade/CrazyCavesTeaser.jpg" alt="">
+        <h3 >Crazy Caves</h3><span class='gamecategory'>arcade</span>
+        </a>
+      </div>
+      <div class='col-sm-4'>
+       <a href="individual-website/arcade/curveball3d.html" class='game-text'> <img src="gamelogo/arcade/CurveBall3dTeaser.jpg" alt=''>
+        <h3 >Curve Ball 3d</h3><span class='gamecategory'>arcade</span>
+        </a>        
+      </div>
+      <div class='col-sm-4 game'>
+       <a href="individual-website/arcade/hippopizzachef.html" class='game-text'> <img src="gamelogo/arcade/HippoPizzaChefTeaser.jpg" alt="">
+        <h3 >Hippo Pizza Chef</h3><span class='gamecategory'>arcade</span>
+        </a>
+      </div>
+    
+      <div class='col-sm-4'>
+       <a href="individual-website/arcade/hooproyale.html" class='game-text'> <img src="gamelogo/arcade/HoopRoyaleTeaser.jpg" alt="">
+        <h3 >Hoop Royale</h3><span class='gamecategory'>arcade</span>
+        </a>
+      
+      </div>
+      <div class='col-sm-4'>
+       <a href="individual-website/arcade/pullpins.html" class='game-text'> <img src="gamelogo/arcade/PullPinsTeaser.jpg" alt="">
+        <h3 >Pull Pins</h3><span class='gamecategory'>arcade</span>
+       </a>
+      </div>
+      <div class='col-sm-4'>
+       <a href="individual-website/arcade/slicerush.html" class='game-text' > <img src="gamelogo/arcade/SliceRushTeaser.jpg" alt=''>
+      <h3 >Slice Rush</h3><span class='gamecategory'>arcade</span> </a>       </div>
+    
+        <div class='col-sm-4'>
+         <a href="individual-website/bubbleshooter/bubblehamsters.html" class='game-text'> <img src="gamelogo/bubble_shooter/BubbleHamstersTeaser.jpg" alt="">
+          <h3 >Bubble Hamsters</h3><span class='gamecategory'>bubble shooter</span>
+         </a>
+        
+        </div>
+        <div class='col-sm-4'>
+         <a href="individual-website/bubbleshooter/bubblespirit.html" class='game-text'> <img src="gamelogo/bubble_shooter/BubbleSpirit_Teaser.jpg" alt="">
+          <h3 >Bubble Spirit</h3><span class='gamecategory'>bubble shooter</span>
+          </a>
+        </div>
+        <div class='col-sm-4'>
+         <a href="individual-website/bubbleshooter/candybubble.html" class='game-text'> <img src="gamelogo/bubble_shooter/CandyBubble_Teaser.jpg" alt=''>
+          <h3 >Candy Bubble</h3><span class='gamecategory'>bubble shooter</span>
+          </a>        
+        </div>
+        <div class='col-sm-4'>
+         <a href="individual-website/bubbleshooter/fuzzies.html" class='game-text'> <img src="gamelogo/bubble_shooter/FuzziesTeaser.jpg" alt="">
+          <h3>Fuzzies</h3><span class='gamecategory'>bubble shooter</span>
+          </a>
+        </div>
+        <div class='col-sm-4 game'>
+         <a href="individual-website/bubbleshooter/kittybubbles.html" class='game-text'> <img src="gamelogo/bubble_shooter/KittyBubblesTeaser.jpg" alt="">
+          <h3 >Kitty Bubbles</h3><span class='gamecategory'>bubble shooter</span>
+          </a>
+        </div>
+ 
+        <div class='col-sm-4'>
+         <a href="individual-website/bubbleshooter/seabubbleshooter.html" class='game-text'> <img src="gamelogo/bubble_shooter/SeaBubbleShooterTeaser.jpg" alt="">
+          <h3 >Sea Bubble Shooter</h3><span class='gamecategory'>bubble shooter</span>
+          </a>
+        
+        </div>
+        <div class='col-sm-4'>
+         <a href="individual-website/bubbleshooter/smartybubbles2.html" class='game-text'> <img src="gamelogo/bubble_shooter/SmartyBubbles2Teaser.jpg" alt="">
+          <h3 >Smarty Bubbles 2</h3><span class='gamecategory'>bubble shooter</span>
+         </a>
+        </div>
+        <div class='col-sm-4'>
+         <a href="individual-website/bubbleshooter/soccerbubbles.html" class='game-text' > <img src="gamelogo/bubble_shooter/SoccerBubblesTeaser.jpg" alt=''>
+        <h3 >Soccer Bubbles</h3><span class='gamecategory'>bubble shooter</span> </a>       </div>
+
+        <div class='col-sm-4'>
+         <a href="individual-website/cards/crossover21.html" class='game-text'> <img src="gamelogo/cards/Crossover21Teaser.jpg" alt="">
+          <h3 >Crossover 21</h3><span class='gamecategory'>cards</span>
+         </a>
+        
+        </div>
+        <div class='col-sm-4'>
+         <a href="individual-website/cards/freecellsolitaire.html" class='game-text'> <img src="gamelogo/cards/FreeCellSolitaireClassicTeaser.jpg" alt="">
+          <h3 >Free Cell Solitaire Classic</h3><span class='gamecategory'>cards</span>
+          </a>
+        </div>
+     
+        <div class='col-sm-4'>
+         <a href="individual-website/cards/mafiapoker.html" class='game-text'> <img src="gamelogo/cards/MafiaPokerTeaser.jpg" alt=''>
+          <h3 >Mafia Poker</h3><span class='gamecategory'>cards</span>
+          </a>        
+        </div>
+        <div class='col-sm-4'>
+         <a href="individual-website/cards/matchingcardheroes.html" class='game-text'> <img src="gamelogo/cards/MatchingCardHeroesTeaser.jpg" alt="">
+          <h3>Matching Card Heroes</h3><span class='gamecategory'>cards</span>
+          </a>
+        </div>
+      
+        <div class='col-sm-4'>
+         <a href="individual-website/cards/solitaireclassic.html" class='game-text'> <img src="gamelogo/cards/SolitaireClassicChristmasTeaser.jpg" alt="">
+          <h3 >Solitaire Classic Christmas</h3><span class='gamecategory'>cards</span>
+          </a>
+        
+        </div>
+        <div class='col-sm-4'>
+         <a href="individual-website/cards/solitaireklondike.html" class='game-text'> <img src="gamelogo/cards/SolitaireKlondikeTeaser.jpg" alt="">
+          <h3 >Solitaire Klondike</h3><span class='gamecategory'>cards</span>
+         </a>
+        </div>
+        <div class='col-sm-4'>
+         <a href="individual-website/cards/wildwestsolitaire.html" class='game-text' > <img src="gamelogo/cards/WildWestSolitaireTeaser.jpg" alt=''>
+        <h3 >Wild West Solitaire</h3><span class='gamecategory'>cards</span> </a>       </div>
+  
+        <div class='col-sm-4'>
+         <a href="individual-website/jump-and-run/bananarun.html" class='game-text'> <img src="gamelogo/jump_&_run/BananaRun_Teaser.jpg" alt="">
+          <h3 >Banana Run</h3><span class='gamecategory'>jump and run</span>
+         </a>
+        </div>
+        <div class='col-sm-4'>
+         <a href="individual-website/jump-and-run/basketandball.html" class='game-text'> <img src="gamelogo/jump_&_run/BasketAndBall_Teaser.jpg" alt="">
+          <h3 >Basket And BalL</h3><span class='gamecategory'>jump and run</span>
+          </a>
+        </div>
+        <div class='col-sm-4'>
+         <a href="individual-website/jump-and-run/greedyrabbit.html" class='game-text'> <img src="gamelogo/jump_&_run/GreedyRabbitTeaser.jpg" alt="">
+          <h3 >Greedy Rabbit</h3><span class='gamecategory'>jump and run</span>
+          </a>
+        </div>
+      
+        <div class='col-sm-4'>
+         <a href="individual-website/jump-and-run/junglerun.html" class='game-text'> <img src="gamelogo/jump_&_run/JungleRunTeaser.jpg" alt=''>
+          <h3 >Jungle Run</h3><span class='gamecategory'>jump and run</span>
+          </a>        
+        </div>
+        <div class='col-sm-4'>
+         <a href="individual-website/jump-and-run/kibakumba.html" class='game-text'> <img src="gamelogo/jump_&_run/KibaKumbaShadowRunTeaser.jpg" alt="">
+          <h3>Kiba Kumba Shadow Run</h3><span class='gamecategory'>jump and run</span>
+          </a>
+        </div>
+        <div class='col-sm-4 game'>
+         <a href="individual-website/jump-and-run/outcome.html" class='game-text'> <img src="gamelogo/jump_&_run/OutcomeTeaser.jpg" alt="">
+          <h3 >Outcome</h3><span class='gamecategory'>jump and run</span>
+          </a>
+        </div>
+    
+        <div class='col-sm-4'>
+         <a href="individual-website/jump-and-run/redhead.html" class='game-text'> <img src="gamelogo/jump_&_run/RedHeadTeaser.jpg" alt="">
+          <h3 >Red Head</h3><span class='gamecategory'>jump and run</span>
+          </a>
+        
+        </div>
+        <div class='col-sm-4'>
+         <a href="individual-website/jump-and-run/snowballchristmas.html" class='game-text'> <img src="gamelogo/jump_&_run/SnowballChristmasWorldTeaser.jpg" alt="">
+          <h3 >Snowball Christmas World</h3><span class='gamecategory'>jump and run</span>
+         </a>
+        </div>
+        <div class='col-sm-4'>
+         <a href="individual-website/jump-and-run/snowballworld.html" class='game-text' > <img src="gamelogo/jump_&_run/SnowballWorldTeaser.jpg" alt=''>
+        <h3>Snowball World</h3><span class='gamecategory'>jump and run</span> </a>       </div>
+    
+        <div class='col-sm-4'>
+         <a href="individual-website/puzzle/blockspuzzlezoo.html" class='game-text'> <img src="gamelogo/puzzle/BlocksPuzzleZooTeaser.jpg" alt="">
+          <h3 >Blocks Puzzle Zoo</h3><span class='gamecategory'>puzzle</span>
+         </a>
+        </div>
+        <div class='col-sm-4'>
+         <a href="individual-website/puzzle/braintrainer.html" class='game-text'> <img src="gamelogo/puzzle/BrainTrainerTeaser.jpg" alt="">
+          <h3 >Brain Trainer</h3><span class='gamecategory'>puzzle</span>
+          </a>
+        </div>
+        <div class='col-sm-4'>
+         <a href="individual-website/puzzle/bunnyquest.html" class='game-text'> <img src="gamelogo/puzzle/BunnyQuestTeaser.jpg" alt="">
+          <h3 >Bunny Quest</h3><span class='gamecategory'>puzzle</span>
+          </a>
+        </div>
+     
+        <div class='col-sm-4'>
+         <a href="individual-website/puzzle/findinmind.html" class='game-text'> <img src="gamelogo/puzzle/FindInMind_Teaser.jpg" alt=''>
+          <h3 >Find In Mind</h3><span class='gamecategory'>puzzle</span>
+          </a>        
+        </div>
+        <div class='col-sm-4 game'>
+         <a href="individual-website/puzzle/mahjong3d.html" class='game-text'> <img src="gamelogo/puzzle/Mahjong3dTeaser.jpg" alt="">
+          <h3>Mahjong 3d</h3><span class='gamecategory'>puzzle</span>
+          </a>
+        </div>
+        <div class='col-sm-4 game'>
+         <a href="individual-website/puzzle/mahjongworld.html" class='game-text'> <img src="gamelogo/puzzle/MahjongWorldTeaser.jpg" alt="">
+          <h3 >Mahjong World</h3><span class='gamecategory'>puzzle</span>
+          </a>
+        </div>
+      
+        <div class='col-sm-4  game'>
+         <a href="individual-website/puzzle/maze.html" class='game-text'> <img src="gamelogo/puzzle/MazeTeaser.jpg" alt="">
+          <h3 >Maze</h3><span class='gamecategory'>puzzle</span>
+          </a>
+        </div>
+        <div class='col-sm-4 game'>
+         <a href="individual-website/puzzle/worddetector.html" class='game-text'> <img src="gamelogo/puzzle/WordDetectorTeaserB.jpg" alt="">
+          <h3 >Word Detector</h3><span class='gamecategory'>puzzle</span>
+         </a>
+        </div>
+        <div class='col-sm-4'>
+         <a href="individual-website/puzzle/yatzyclassic.html" class='game-text' > <img src="gamelogo/puzzle/YatzyClassicTeaser.jpg" alt=''>
+        <h3>Yatzy Classic</h3><span class='gamecategory'>puzzle</span> </a>       </div>
+     
+        <div class='col-sm-4'>
+         <a href="individual-website/quiz/7words.html" class='game-text'> <img src="gamelogo/quiz/7WordsTeaser.jpg" alt="">
+          <h3 >7 Words</h3><span class='gamecategory'>quiz</span>
+         </a>
+        </div>
+        <div class='col-sm-4'>
+         <a href="individual-website/quiz/alienquest.html" class='game-text'> <img src="gamelogo/quiz/AlienQuestTeaser.jpg" alt="">
+          <h3 >Alien Quest</h3><span class='gamecategory'>quiz</span>
+          </a>
+        </div>
+        <div class='col-sm-4'>
+         <a href="individual-website/quiz/animalquiz.html" class='game-text'> <img src="gamelogo/quiz/AnimalQuizChristmasTeaser.jpg" alt="">
+          <h3 >Animal Quiz Christmas</h3><span class='gamecategory'>quiz</span>
+          </a>
+        </div>
+ 
+        <div class='col-sm-4'>
+         <a href="individual-website/quiz/fluffyegg.html" class='game-text'> <img src="gamelogo/quiz/FluffyEggTeaser.jpg" alt=''>
+          <h3 >Fluffy Egg</h3><span class='gamecategory'>quiz</span>
+          </a>        
+        </div>
+        <div class='col-sm-4'>
+         <a href="individual-website/quiz/geoquizeurope.html" class='game-text'> <img src="gamelogo/quiz/GeoQuizEuropeTeaser.jpg" alt="">
+          <h3>Geo Quiz Europe</h3><span class='gamecategory'>quiz</span>
+          </a>
+        </div>
+        <div class='col-sm-4 game'>
+         <a href="individual-website/quiz/quickquiz.html" class='game-text'> <img src="gamelogo/quiz/QuickQuizTeaser.jpg" alt="">
+          <h3 >Quick Quiz</h3><span class='gamecategory'>quiz</span>
+          </a>
+        </div>
+
+        <div class='col-sm-4'>
+         <a href="individual-website/quiz/sweetganman.html" class='game-text'> <img src="gamelogo/quiz/SweetHangmanTeaser.jpg" alt="">
+          <h3 >Sweet Hangman</h3><span class='gamecategory'>quiz</span>
+          </a>
+        
+        </div>
+        <div class='col-sm-4'>
+         <a href="individual-website/quiz/whatfamouscat.html" class='game-text'> <img src="gamelogo/quiz/WhatFamousCatAreYouTeaser.jpg" alt="">
+          <h3 >What Famous Cat Are You</h3><span class='gamecategory'>quiz</span>
+         </a>
+        </div>
+        <div class='col-sm-4'>
+         <a href="individual-website/quiz/wordguess4images.html" class='game-text' > <img src="gamelogo/quiz/Wordguess4ImagesTeaser.jpg" alt=''>
+        <h3>Wordguess 4 Images</h3><span class='gamecategory'>quiz</span> </a>       </div>
+     
+        <div class='col-sm-4'>
+         <a href="individual-website/racing/2cars.html" class='game-text'> <img src="gamelogo/racing/2CarsTeaser.jpg" alt="">
+          <h3 >2 Cars</h3><span class='gamecategory'>racing</span>
+         </a>
+        </div>
+        <div class='col-sm-4'>
+         <a href="individual-website/racing/dontcrash.html" class='game-text'> <img src="gamelogo/racing/DontCrashTeaser.jpg" alt="">
+          <h3 >Dont Crash</h3><span class='gamecategory'>racing</span>
+          </a>
+        </div>
+        <div class='col-sm-4'>
+         <a href="individual-website/racing/dragracingclub.html" class='game-text'> <img src="gamelogo/racing/DragRacingClubTeaser.jpg" alt="">
+          <h3 >Drag Racing Club</h3><span class='gamecategory'>racing</span>
+          </a>
+        </div>
+
+        <div class='col-sm-4'>
+         <a href="individual-website/racing/highhills.html" class='game-text'> <img src="gamelogo/racing/HighHillsTeaser.jpg" alt=''>
+          <h3 >High Hills</h3><span class='gamecategory'>racing</span>
+          </a>        
+        </div>
+        <div class='col-sm-4'>
+         <a href="individual-website/racing/highwayriderextreme.html" class='game-text'> <img src="gamelogo/racing/HighwayRiderExtremeTeaser.jpg" alt="">
+          <h3>Highway Rider Extreme</h3><span class='gamecategory'>racing</span>
+          </a>
+        </div>
+        <div class='col-sm-4 game'>
+         <a href="individual-website/racing/motox3poolparty.html" class='game-text'> <img src="gamelogo/racing/MotoX3mPoolPartyTeaser.jpg" alt="">
+          <h3 >MotoX3 Pool Party</h3><span class='gamecategory'>racing</span>
+          </a>
+        </div>
+      
+        <div class='col-sm-4'>
+         <a href="individual-website/racing/rivalrush.html" class='game-text'> <img src="gamelogo/racing/RivalRushTeaser.jpg" alt="">
+          <h3 >RivalRush</h3><span class='gamecategory'>racing</span>
+          </a>
+        
+        </div>
+        <div class='col-sm-4'>
+         <a href="individual-website/racing/thugracer.html" class='game-text'> <img src="gamelogo/racing/ThugRacerTeaser.jpg" alt="">
+          <h3 >Thug Racer</h3><span class='gamecategory'>racing</span>
+         </a>
+        </div>
+        <div class='col-sm-4'>
+         <a href="individual-website/racing/turbostatic.html" class='game-text' > <img src="gamelogo/racing/TurbotasticTeaser.jpg" alt=''>
+        <h3>Turbotastic</h3><span class='gamecategory'>racing</span> </a>       </div>
+      
+        <div class='col-sm-4'>
+         <a href="individual-website/sports/3dairhockey.html" class='game-text'> <img src="gamelogo/sports/3dAirHockeyTeaser.jpg" alt="">
+          <h3 >3d AirHockey</h3><span class='gamecategory'>sports</span>
+         </a>
+        </div>
+        <div class='col-sm-4'>
+         <a href="individual-website/sports/3dbasketball.html" class='game-text'> <img src="gamelogo/sports/3dBasketballTeaser.jpg" alt="">
+          <h3 >3d Basketball</h3><span class='gamecategory'>sports</span>
+          </a>
+        </div>
+        <div class='col-sm-4'>
+         <a href="individual-website/sports/3dbowling.html" class='game-text'> <img src="gamelogo/sports/3dBowlingTeaser.jpg" alt="">
+          <h3 >3d Bowling</h3><span class='gamecategory'>sports</span>
+          </a>
+        </div>
+      
+        <div class='col-sm-4'>
+         <a href="individual-website/sports/3ddarts.html" class='game-text'> <img src="gamelogo/sports/3dDartsTeaser.jpg" alt=''>
+          <h3 >3d Darts</h3><span class='gamecategory'>sports</span>
+          </a>        
+        </div>
+        <div class='col-sm-4'>
+         <a href="individual-website/sports/cheapgolf.html" class='game-text'> <img src="gamelogo/sports/CheapGolfTeaser.jpg" alt="">
+          <h3>Cheap Golf</h3><span class='gamecategory'>sports</span>
+          </a>
+        </div>
+        <div class='col-sm-4 game'>
+         <a href="individual-website/sports/dunkbrush.html" class='game-text'> <img src="gamelogo/sports/DunkBrushTeaser.jpg" alt="">
+          <h3 >Dunk Brush</h3><span class='gamecategory'>sports</span>
+          </a>
+        </div>
+      
+        <div class='col-sm-4'>
+         <a href="individual-website/sports/goalkeeperchamp.html" class='game-text'> <img src="gamelogo/sports/GoalkeeperChampTeaser.jpg" alt="">
+          <h3 >Goalkeeper Champ</h3><span class='gamecategory'>sports</span>
+          </a>
+        
+        </div>
+        <div class='col-sm-4'>
+         <a href="individual-website/sports/tabbletennis.html" class='game-text'> <img src="gamelogo/sports/TableTennis_WorldTour_Teaser.jpg" alt="">
+          <h3 >TableTennis WorldTour</h3><span class='gamecategory'>sports</span>
+         </a>
+        </div>
+        <div class='col-sm-4'>
+         <a href="individual-website/sports/worldcuppenalty.html" class='game-text' > <img src="gamelogo/sports/WorldCupPenalty_2018Teaser.jpg" alt=''>
+        <h3>World Cup Penalty2018</h3><span class='gamecategory'>sports</span> </a>       </div>
+      
+      
+        <div class='col-sm-4'>
+         <a href="individual-website/best/8ballbillardsclassic.html" class='game-text'> <img src="gamelogo/best/8BallBilliardsClassicTeaser.jpg" alt="">
+          <h3 >8 Ball Billiards Classic</h3><span class='gamecategory'>best</span>
+         </a>
+        </div>
+        <div class='col-sm-4'>
+         <a href="individual-website/bubbleshooter/bubblewoods.html" class='game-text'> <img src="gamelogo/best/BubbleWoodsTeaser.jpg" alt="">
+          <h3 >Bubble Woods</h3><span class='gamecategory'>bubble shooter</span>
+          </a>
+        </div>
+        <div class='col-sm-4'>
+         <a href="individual-website/best/colorpixelartclassic.html" class='game-text'> <img src="gamelogo/best/ColorPixelArtClassicTeaser.jpg" alt="">
+          <h3 >ColorPixel Art Classic</h3><span class='gamecategory'>best</span>
+          </a>
+        </div>
+      
+      
+        <div class='col-sm-4'>
+         <a href="individual-website/best/elementblocks.html" class='game-text'> <img src="gamelogo/best/ElementBlocksTeaser.jpg" alt=''>
+          <h3 >Element Blocks</h3><span class='gamecategory'>best</span>
+          </a>        
+        </div>
+        <div class='col-sm-4'>
+         <a href="individual-website/best/ginrummyplus.html" class='game-text'> <img src="gamelogo/best/GinRummyPlusTeaser.jpg" alt="">
+          <h3>GinRummy Plus</h3><span class='gamecategory'>best</span>
+          </a>
+        </div>
+      
+      
+        <div class='col-sm-4'>
+         <a href="individual-website/best/perfectpiano.html" class='game-text'> <img src="gamelogo/best/PerfectPiano_Teaser.jpg" alt="">
+          <h3 >Perfect Piano</h3><span class='gamecategory'>best</span>
+          </a>
+        
+        </div>
+        <div class='col-sm-4'>
+         <a href="individual-website/best/piratecards.html" class='game-text'> <img src="gamelogo/best/PirateCardsTeaser.jpg" alt="">
+          <h3 >Pirate Cards</h3><span class='gamecategory'>best</span>
+         </a>
+        </div>
+        <div class='col-sm-4'>
+         <a href="individual-website/best/zooboom.html" class='game-text' > <img src="gamelogo/best/ZooBoomTeaser.jpg" alt=''>
+        <h3>ZooBoom</h3><span class='gamecategory'></span>best</a>       </div>
+      
+      
+      
+       
+        <div class='col-sm-4 game'>
+         <a href="individual-website/new/gardenbloom.html" class='game-text'> <img src="gamelogo/new/GardenBloomTeaser.jpg" alt="">
+          <h3>Garden Bloom</h3><span class='gamecategory'>New</span>
+          </a>
+        </div>
+        <div class='col-sm-4 game'>
+         <a href="individual-website/new/gardenmatch3d.html" class='game-text'> <img src="gamelogo/new/GardenMatch3dTeaser.jpg" alt="">
+          <h3 >Garden Match 3d</h3><span class='gamecategory'>New</span>
+          </a>
+        </div>
+      
+     
+        
+        
+        <div class='col-sm-4 game'>
+         <a href="individual-website/new/tntbomb.html" class='game-text' > <img src="gamelogo/new/TntBombTeaser.jpg" alt=''>
+        <h3 >Tnt Bomb</h3><span class='gamecategory'>New</span> </a>       </div>
+    </div>
+  
+  
+
+  
+
+
+  </div>
+
+  
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyDJzne7p_Vbcnm8H2liWkjq1A7LcFXhLeo",
+      authDomain: "gamersarenawoc.firebaseapp.com",
+      projectId: "gamersarenawoc",
+      storageBucket: "gamersarenawoc.appspot.com",
+      messagingSenderId: "839180830761",
+      appId: "1:839180830761:web:14fbddc23dc8824a7ab438"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+    const database = firebase.firestore();
+    database.settings({ timestampsInSnapshots: true });
+  </script>
+ <script src="search.js"></script>
+ 
+</body>
+
+</html>

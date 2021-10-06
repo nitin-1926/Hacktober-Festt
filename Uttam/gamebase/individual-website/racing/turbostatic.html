@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="/main-page.css">
+  <title>Turbotastic</title>
+  <link rel='icon' type='image/png' href='/video-game.png'>
+
+</head>
+
+<body>
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+
+    <a class="navbar-brand" href="/main-page.html">
+      <img src="/video-game.png" alt="" class="d-inline-block align-top">
+      GamersArena
+    </a>
+
+    <ul class='navbar-nav'>
+      <li class='nav-item'>
+        <a class='nav-link' href='/main-page.html' id="home">Home</a>
+      </li>
+      
+      <div id="navbarNavDarkDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Category
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+              <li><a class="dropdown-item" href="/arcade.html">Arcade</a></li>
+              <li><a class="dropdown-item" href="/cards.html">Cards</a></li>
+              <li><a class="dropdown-item" href="/bubble-shooter.html">Bubble Shooter</a></li>
+              <li><a class="dropdown-item" href="/jump-and-run.html">Jump and Run</a></li>
+              <li><a class="dropdown-item" href="/main-page.html">New</a></li>
+              <li><a class="dropdown-item" href="/puzzle.html">Puzzle</a></li>
+              <li><a class="dropdown-item" href="/quiz.html">Quiz</a></li>
+              <li><a class="dropdown-item" href="/racing.html">Racing</a></li>
+              <li><a class="dropdown-item" href="/sports.html">Sports</a></li>
+              <li><a class="dropdown-item" href="/best.html">Best</a></li>
+              
+
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <li class='nav-item'>
+        <a class='nav-link' href="/search.html" id='search'>Search Games</a>
+      </li>
+      <li class='nav-item'>
+        <a class='nav-link' href="/upload.html" id='upload-game'>Upload</a>
+      </li>
+      
+      <div id="signoutdiv">
+        <a class='nav-link' href="" id='signoutbutton'>Sign Out</a>
+      </div>
+
+    </ul>
+
+  </nav>
+  </div>
+  <h1 class='gametitle'>TURBOTASTIC</h1>
+  
+
+  <iframe src='https://play.famobi.com/turbotastic' title="game-name" name='game-name' id='iframe'></iframe>
+ <br>
+ <h3>Check Out Other Games... </h3>
+ <div class='container-fluid'>
+     <div class='row'>
+        <div class='col-sm-3'>
+            <a href="2cars.html" class='game-text'> <img src="/gamelogo/racing/2CarsTeaser.jpg" alt="">
+                <h3 >2 Cars</h3>
+               </a>
+         </div>
+         <div class='col-sm-3'>
+            <a href="dontcrash.html" class='game-text'> <img src="/gamelogo/racing/DontCrashTeaser.jpg" alt="">
+                <h3 >Don't Crash</h3>
+               </a>
+         </div>
+         <div class='col-sm-3'>
+            <a href="dragracingclub.html" class='game-text'> <img src="/gamelogo/racing/DragRacingClubTeaser.jpg" alt="">
+                <h3 >Drag Racing Club</h3>
+               </a>
+         </div>
+         <div class='col-sm-3'>
+            <a href="highhills.html" class='game-text'> <img src="/gamelogo/racing/HighHillsTeaser.jpg" alt="">
+                <h3 >High Hills</h3>
+               </a>
+         </div>
+     </div>
+
+ </div>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyDJzne7p_Vbcnm8H2liWkjq1A7LcFXhLeo",
+      authDomain: "gamersarenawoc.firebaseapp.com",
+      projectId: "gamersarenawoc",
+      storageBucket: "gamersarenawoc.appspot.com",
+      messagingSenderId: "839180830761",
+      appId: "1:839180830761:web:14fbddc23dc8824a7ab438"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+    const database = firebase.firestore();
+    database.settings({ timestampsInSnapshots: true });
+  </script>
+  <script>
+     upload=document.getElementById("upload-game");
+ signout=document.getElementById('signoutbutton');
+
+    signout.addEventListener("click",e=>{
+    auth.signOut();
+})
+    auth.onAuthStateChanged(user=> {
+    if(!user){
+     window.location.href='/home-page.html';
+    
+    }else{
+        
+
+        database.collection('users').where('email','==', user.email).get().then((snapshot =>{
+            snapshot.docs.forEach((doc)=>{
+                if(doc.data().admin==true){
+                    upload.style.display='block';
+                    signout.style.marginLeft='-80px';
+                    
+                }
+            })
+        }))
+    }
+}); 
+  </script>
+ 
+</body>
+
+</html>
