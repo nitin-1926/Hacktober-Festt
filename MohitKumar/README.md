@@ -14,7 +14,7 @@ module:
 ## RUN
 either get songs at random or enter a name as a command line argument [allowed with spaces too] or if u don't pass any name it picks a random artist/band from the artistNames.txt file
 
-    $ python3 2p.py [args]
+    $ python3 yp.py [args]
 
 ## Warnings
 Result data is not formatted 
