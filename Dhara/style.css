@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "ubuntu", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #dfdbe5;
+  background-image: url("bg.jpg");
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(146, 139, 139, 0.6);
+  border-radius: 10px;
+  width: 600px;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 10px;
+}
+
+.quote {
+  text-align: center;
+  font-style: italic;
+  color: #3554e0;
+}
+
+.author {
+  color: #e62260f3;
+  font-size: 30px;
+}
+
+hr {
+  margin: 10px 0;
+  width: 60%;
+  border: 2px solid #3c63ee88;
+}
+.fa-quote-left {
+    font-size: 90px;
+    color: #e62260f3;
+  }
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.buttons button {
+  cursor: pointer;
+  border: none;
+  color: #e62260f3;
+  font-size: 30px;
+  font-weight: 700;
+  background-color: #3554e0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* loader */
+.loader {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(209, 203, 203);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader.hide {
+  display: none;
+}
