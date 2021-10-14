@@ -56,5 +56,5 @@ int main()
 	else{
 		grade="F";
 	}
-	cout<<grade;
+	cout<<"Your Grade With "<<marks<<" marks is "<<grade;
 }
